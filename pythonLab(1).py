@@ -1,0 +1,59 @@
+fruits=("Dahaka","Barisal","Khulna")
+print(len(fruits))
+print(fruits[2])
+print(fruits[-2])
+print(fruits[1:2])
+print(fruits[:2])
+print(fruits[1:])
+x=list(fruits)
+x[1]="Bogura"
+fruits=tuple(x)
+print(fruits)
+x.append("Rajshahi")
+fruits=tuple(x)
+print(fruits)
+x.remove("Rajshahi")
+fruits=tuple(x)
+print(fruits)
+x.insert(2,"Cumilla")
+fruits=tuple(x)
+x=("Rangpur",)
+fruits+=x
+print(fruits)
+Mydict={
+    "Brand":"Ford",
+    "Model":"Mustang",
+    "Year":1976
+    }
+print(Mydict)
+print(Mydict["Model"])
+print(Mydict["Year"])
+Mydict.pop("Model")
+print(Mydict)
+del(Mydict["Brand"])
+print(Mydict)
+
+Capitals={
+    "Germany":"Berlin",
+    "Bangladeh":"Dhaka",
+    }
+Capitals["Italy"]="Rome"
+print(Capitals)
+Capitals["Italy"]="Akash"
+print(Capitals)
+myFamily={
+
+    "child1":{
+    "name":"Emly",
+    "year":2002
+    },
+
+    "child2":{
+    "name":"Akash",
+    "year":2005
+    }
+}
+print(myFamily["child1"]["name"])
+num=[1,2,3,4,5]
+for num in num:
+    print(num)
